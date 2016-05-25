@@ -3,10 +3,16 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'moment': 'vendor/moment/moment.js',
+  'ng2-bootstrap/ng2-bootstrap': 'vendor/ng2-bootstrap/'
 };
 
 /** User packages configuration. */
 const packages: any = {
+  'ng2-bootstrap/ng2-bootstrap': {
+    defaultExtension: 'js',
+    main: 'ng2-bootstrap.js'
+  }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -45,7 +51,7 @@ System.config({
   map: {
     '@angular': 'vendor/@angular',
     'rxjs': 'vendor/rxjs',
-    'main': 'main.js'
+    'main': 'main.js',
   },
   packages: cliSystemConfigPackages
 });
